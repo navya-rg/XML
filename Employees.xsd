@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="employees">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="employee" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="fname" type="xs:string"/>
+										<xs:element name="lname" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="dob" type="xs:date"/>
+							<xs:element name="age">
+								<xs:simpleType>
+								    <xs:restriction base="xs:integer">
+								      	<xs:minInclusive value="18"/>
+								      	<xs:maxInclusive value="65"/>
+								    </xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="email">
+								<xs:simpleType>
+								    <xs:restriction base="xs:string">
+								      	<xs:pattern value="[a-z][a-z0-9_\.]*(@)[a-z]*(\.)[a-z]*"/>
+								    </xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="mbl">
+								<xs:simpleType>
+								    <xs:restriction base="xs:string">
+								      	<xs:pattern value="[789][0-9]{9}"/>
+								    </xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="designation">
+								<xs:simpleType>
+								    <xs:restriction base="xs:string">
+								    	<xs:enumeration value="Intern Consulting"/>
+								      	<xs:enumeration value="Java Developer"/>
+								      	<xs:enumeration value="Python Developer"/>
+								      	<xs:enumeration value="UI/UX Designer"/>
+								      	<xs:enumeration value="Database Support"/>
+								      	<xs:enumeration value="Technical Consultant"/>
+								      	<xs:enumeration value="Senior Technical Consultant"/>
+								      	<xs:enumeration value="Lead Technical Consultant"/>
+								      	<xs:enumeration value="Branch Manager"/>
+								      	<xs:enumeration value="General Manager"/>
+								      	<xs:enumeration value="Chief Executive Officer"/>
+								  		<xs:enumeration value="Chief Operations Officer"/>
+								    </xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="experience">
+								<xs:simpleType>
+								    <xs:restriction base="xs:decimal">
+								      	<xs:minInclusive value="0.0"/>
+								    </xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

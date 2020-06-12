@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<employees
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="Employees.xsd">
+	<employee>
+	  <name>
+	  	<fname>Jane</fname>
+	  	<lname>Doe</lname>
+	  </name>
+	  <dob>1999-07-19</dob>
+	  <age>20</age>
+	  <email>jane.doe@xmail.com</email>
+	  <mbl>9876543210</mbl>
+	  <designation>Java Developer</designation>
+	  <experience>3.4</experience>
+	</employee>
+
+	<employee>
+		<name>
+			<fname>John</fname>
+			<lname>Smith</lname>
+		</name>
+		<dob>1994-03-24</dob>
+		<age>25</age>
+		<email>john.smith@xmail.com</email>
+		<mbl>9121212121</mbl>
+		<designation>Senior Technical Consultant</designation>
+		<experience>6.2</experience>
+	</employee>
+
+	<employee>
+		<name>
+			<fname>Alice</fname>
+			<lname>Pinkman</lname>
+		</name>
+		<dob>1990-08-02</dob>
+		<age>33</age>
+		<email>alice.pinkman@xmail.com</email>
+		<mbl>9898989898</mbl>
+		<designation>General Manager</designation>
+		<experience>10</experience>
+	</employee>
+
+	<employee>
+		<name>
+			<fname>Bob</fname>
+			<lname>Driscol</lname>
+		</name>
+		<dob>1991-10-16</dob>
+		<age>32</age>
+		<email>bob.driscol@xmail.com</email>
+		<mbl>9999999999</mbl>
+		<designation>Chief Executive Officer</designation>
+		<experience>9</experience>
+	</employee>
+</employees>
